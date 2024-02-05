@@ -71,7 +71,7 @@ public class BasicApplicationTests {
      * Test call of create method, on weblayer.
      */
     @Test
-    public void testCreate() throws Exception {
+    void testCreate() throws Exception {
         Base64.Encoder encoder = Base64.getEncoder();
         String encoding = encoder.encodeToString((USER + ":" + PASSWORD).getBytes());
         Invoice mockdto = new Invoice();
@@ -88,7 +88,7 @@ public class BasicApplicationTests {
      * Test call of create method, on weblayer.
      */
     @Test
-    public void testFindById() throws Exception {
+    void testFindById() throws Exception {
         Base64.Encoder encoder = Base64.getEncoder();
         String encoding = encoder.encodeToString((USER + ":" + PASSWORD).getBytes());
         Invoice mockdto = new Invoice();
